@@ -15,6 +15,11 @@ body {
   background-color: #f5f5f5;
 }
 
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
 header {
   text-align: center;
   padding: 20px 0;
@@ -22,6 +27,28 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
+}
+
+body.dark-mode header {
+  background-color: #000;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dark-mode-toggle.dark {
+  background-color: #333;
+  color: #fff;
 }
 
 header h1 {
@@ -48,6 +75,11 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+}
+
+body.dark-mode section {
+  background-color: #444;
+  color: #f5f5f5;
 }
 
 section h3 {
@@ -141,4 +173,39 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participant Info Section */
+.participant-info {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .participant-info {
+  background-color: #555;
+}
+
+.participant-info h2 {
+  margin-bottom: 15px;
+  color: #1a237e;
+}
+
+.participant-info p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.participant-info .info-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+body.dark-mode .info-item {
+  background-color: #666;
 }
